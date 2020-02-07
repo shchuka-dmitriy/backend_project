@@ -1,0 +1,21 @@
+const fs = require('fs');
+
+require( 'dotenv/config' );
+
+module.exports = {
+  development: {
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
+    host: process.env.DB_HOST,
+    dialect: "postgres",
+    migrationStorage: 'json',
+    seederStorage: 'json',
+    dialectOptions: {
+        decimalNumbers: true,
+        parseFloat: true,
+    }
+  },
+  test: {},
+  production: {}
+};
