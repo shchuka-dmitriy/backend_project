@@ -1,9 +1,10 @@
 require("babel-register");
 const path = require('path');
+const commonDbPath = 'src/db';
 
 module.exports = {
   'config': path.resolve('config', 'config.js'),
-  'models-path': path.resolve('db', 'models'),
-  'seeders-path': path.resolve('db', 'seeders'),
-  'migrations-path': path.resolve('db', 'migrations')
+  'models-path': path.resolve(commonDbPath, 'models'),
+  'seeders-path': path.resolve(commonDbPath, 'seeders'),
+  'migrations-path': path.resolve(commonDbPath, 'migrations')
 }
