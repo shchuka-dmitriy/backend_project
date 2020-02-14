@@ -28,7 +28,7 @@ class TaskController {
     }
   };
 
-  getTask = async (req, res, next) => {
+  getTaskById = async (req, res, next) => {
     try {
       const taskData = await this._controller.read(req.params.id, {});
       res.send(taskData);

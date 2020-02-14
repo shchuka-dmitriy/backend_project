@@ -1,7 +1,7 @@
 **/.idea/
 **/node_modules/
 **/package-lock.json
-**/.env
+#**/.env
 **/backend/sequelize-meta.json
 **/backend/sequelize-data.json
 !.eslintrc

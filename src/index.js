@@ -1,12 +1,9 @@
 const express = require('express');
-const { User } = require('./models');
-
-
+const router = require('./routers');
+const PORT = process.env.NODE_PORT || 3000;
 
 const app = express();
+app.use(express.json());
+app.use( router );
 
-app.get('/', function(req, res) {       
-    res.send('Response from server')
-});
-
-app.listen(3000);
+app.listen(PORT, () => console.log(`Listening port on ${PORT}!`));

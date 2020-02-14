@@ -22,7 +22,7 @@
     "bcrypt": "^3.0.8"
   },
   "devDependencies": {
-    "babel-register": "^6.26.0",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "sequelize-cli": "^5.5.1"
   }
 }
