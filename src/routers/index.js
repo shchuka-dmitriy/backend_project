@@ -4,6 +4,7 @@ const express = require( 'express' );
 const { checkAuthorization } = require( '../middlewares/authorization' );
 const { UserController, TaskController } = require( '../controllers' );
 const router = express.Router();
+const adminRouter = require('./admin.js');
 
 router.use( checkAuthorization );
 router.route( '/user(/:id)?' )                  //   "/user" или "/user/:id"
